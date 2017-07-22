@@ -1,0 +1,18 @@
+group 'Main'
+version '1.0-SNAPSHOT'
+
+apply plugin:'java'
+
+description = "Using user-defined library as dependency"
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'in.oogway.maths:in.oogway.maths:1.0'
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+}
